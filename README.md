@@ -1,28 +1,24 @@
 # Hover.css
 
-[![Join the chat at https://gitter.im/IanLunn/Hover](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/IanLunn/Hover?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Uma coleção de CSS3 efeitos de foco , botões, logotipos, SVG, contou com imagens e assim por diante. Facilmente aplicar aos seus próprios elementos, modificar ou simplesmente usar como inspiração. Disponível em CSS, Sass, e menos.
 
-A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.
 
-[Demo](http://ianlunn.github.io/Hover)  |
-[Tutorial](http://ianlunn.co.uk/articles/hover-css-tutorial-introduction/)
+## Download / Instalação
 
-## Download/Install
+- NPM: `NPM instalar hover.css` --save
+- Bower: `pavilhão instalar Hover`
+- [Download Zip] (https://github.com/IanLunn/Hover/archive/master.zip)
 
-- NPM: `npm install --save hover.css`
-- Bower: `bower install Hover`
-- [Download Zip](https://github.com/IanLunn/Hover/archive/master.zip)
+## Como usar
+Hover.css pode ser utilizado num certo número de maneiras; , copie e cole o efeito que você gostaria de usar em seu próprio estilo ou fazer referência a folha de estilo. Em seguida, basta adicionar o nome da classe do efeito para o elemento que você gostaria que fosse aplicado.
 
-## How To Use
-Hover.css can be used in a number of ways; either copy and paste the effect you'd like to use in your own stylesheet or reference the stylesheet. Then just add the class name of the effect to the element you'd like it applied to.
+### A. Copiar e colar um Efeito
+Se você está pensando em usar apenas um ou vários efeitos, é melhor prática para copiar e colar um efeito em seu próprio estilo, para que um usuário não precisa baixar `css / hover.css` na sua totalidade.
 
-### A. Copy and Paste an Effect
-If you plan on only using one or several effects, it's better practice to copy and paste an effect into your own stylesheet, so a user doesn't have to download `css/hover.css` in its entirety.
+Supondo que você quer usar o efeito de crescer:
 
-Assuming you want to use the Grow effect:
-
-1. Download Hover.css
-2. In `css/hover.css`, find the Grow CSS (each effect is named using a comment above it):
+1. Faça o download Hover.css
+2. Em `css/hover.css`, encontrar o CSS Grow (cada efeito é nomeado usando um comentário acima):
 
     ```css
     /* Grow */
@@ -43,45 +39,45 @@ Assuming you want to use the Grow effect:
         transform: scale(1.1);
     }
     ```
-3. Copy this effect and then paste it into your own stylesheet.
-4. In the HTML file which you'd like the effect to appear, add the class of `.hvr-grow` to your chosen element.
+3. Copie este efeito e, em seguida, colá-lo em seu próprio estilo.
+4. No arquivo HTML que você gostaria que o efeito a aparecer, adicione a classe de `.hvr-grow` no seu elemento escolhido.
 
-Example element before applying Hover.css effect:
-
-```html
-<a href="#">Add to Basket</a>
-```
-
-Example element after applying Hover.css effect:
+Exemplo de elemento antes de aplicar efeito Hover.css:
 
 ```html
-<a href="#" class="hvr-grow">Add to Basket</a>
+<a href="#">Adicionar</a>
 ```
 
-**Note**: As of `2.0.0` all Hover.css class names are prefixed with `hvr-` to prevent conflicts with other libraries/stylesheets. If using Sass/LESS, this can easily be changed using the `$nameSpace`/`@nameSpace` variable in `scss/_options.scss` or `less/_options.less`.
+Exemplo de elemento após a aplicação de efeito Hover.css:
 
-### B. Reference Hover.css
+```html
+<a href="#" class="hvr-grow">Adicionar</a>
+```
 
-If you plan on using many Hover.css effects, you may like to reference the entire Hover.css stylesheet.
+** Nota **: A partir de `2.0.0` todos os nomes de classe Hover.css são prefixados com` HVR-`para evitar conflitos com outras bibliotecas / folhas de estilo. Se estiver usando Sass / MENOS, isso pode facilmente ser mudado usando o `$ nameSpace` /` @ nameSpace` variável em `SCSS / options.scss` ou` less / _options.less`.
 
-1. Download `hover-min.css`
-2. Add `hover-min.css` to your websites files, in a directory named `css` for example
-3. Reference `hover-min.css` in `<head>` of the HTML page you'd like to add Hover.css effects to:
+### B. Hover.css - Referência
+
+Se você planeja usar muitos efeitos Hover.css, você pode gostar de fazer referência toda a folha de estilo Hover.css.
+
+1. Download
+2. adiciona `hover-min.css` para arquivos do seu site, em um diretório chamado `css` por exemplo.
+3. Referencie `hover-min.css` en `<head>` da página HTML que você gostaria de adicionar efeitos Hover.css a:
 ```html
 <head>
 	<link href="css/hover-min.css" rel="stylesheet">
 </head>
 ```
-Alternatively you can add a reference into an existing stylesheet like so (this may be useful to WordPress users who are unable to edit HTML):
+Alternativamente, você pode adicionar uma referência a uma folha de estilo existente assim (isso pode ser útil para os usuários do WordPress que são incapazes de editar HTML):
 ```css
 @import url("hover-min.css");
 ```
-4. Assuming you want to use the Grow effect, in the HTML file you'd like to use this effect, add the class of `.hvr-grow` to your chosen element.
+4. Supondo que você quer usar o efeito Grow, no arquivo HTML que você gostaria de usar esse efeito, adicione a classe de `.hvr-grow` no seu elemento escolhido.
 
-Example element before applying Hover.css effect:
+Examplo elemento depois de aplicado o efeito Hover.css:
 
 ```html
-<a href="#" class="button">Add to Basket</a>
+<a href="#" class="button">Adicionar</a>
 ```
 
 Example element after applying Hover.css effect:
